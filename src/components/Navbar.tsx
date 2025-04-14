@@ -1,6 +1,7 @@
+
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { ShoppingBag, Menu, X, Search, Heart } from 'lucide-react';
+import { ShoppingBag, Menu, X, Search, Heart, Instagram, MessageCircle } from 'lucide-react';
 import { useCart } from '@/context/CartContext';
 import { Button } from '@/components/ui/button';
 import {
@@ -91,7 +92,9 @@ const Navbar = () => {
                 </div>
                 {cartCount > 0 && (
                   <div className="border-t py-6">
-                    <Button className="w-full mb-2">View Cart</Button>
+                    <Link to="/cart">
+                      <Button className="w-full mb-2">View Cart</Button>
+                    </Link>
                     <Button variant="outline" className="w-full">Checkout</Button>
                   </div>
                 )}
@@ -134,7 +137,9 @@ const Navbar = () => {
                 </div>
                 {cartCount > 0 && (
                   <div className="border-t py-6">
-                    <Button className="w-full mb-2">View Cart</Button>
+                    <Link to="/cart">
+                      <Button className="w-full mb-2">View Cart</Button>
+                    </Link>
                     <Button variant="outline" className="w-full">Checkout</Button>
                   </div>
                 )}

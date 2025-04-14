@@ -1,6 +1,7 @@
+
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Facebook, Instagram, Twitter, Mail, MapPin, Phone } from 'lucide-react';
+import { Facebook, Instagram, Twitter, Mail, MapPin, Phone, MessageCircle } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { toast } from 'sonner';
@@ -55,11 +56,14 @@ const Footer = () => {
               Handcrafted beauty products inspired by you. Elevate your beauty routine with ZARA'S GLOSS.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-600 hover:text-brand-pink transition-colors">
-                <Facebook size={20} />
+              <a href="https://www.instagram.com/zaras_gloss" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-brand-pink transition-colors">
+                <Instagram size={20} />
+              </a>
+              <a href="https://wa.me/c/2349061190264" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-brand-pink transition-colors">
+                <MessageCircle size={20} />
               </a>
               <a href="#" className="text-gray-600 hover:text-brand-pink transition-colors">
-                <Instagram size={20} />
+                <Facebook size={20} />
               </a>
               <a href="#" className="text-gray-600 hover:text-brand-pink transition-colors">
                 <Twitter size={20} />
@@ -96,15 +100,19 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-start">
                 <MapPin size={20} className="mr-2 text-brand-pink flex-shrink-0 mt-1" />
-                <span className="text-gray-600">123 Beauty Lane, Lagos, Nigeria</span>
+                <span className="text-gray-600">Igbariam, Anambra, Nigeria</span>
               </li>
               <li className="flex items-center">
                 <Phone size={20} className="mr-2 text-brand-pink flex-shrink-0" />
-                <span className="text-gray-600">+234 123 4567 890</span>
+                <span className="text-gray-600">+234 906 119 0264</span>
               </li>
               <li className="flex items-center">
                 <Mail size={20} className="mr-2 text-brand-pink flex-shrink-0" />
-                <span className="text-gray-600">hello@zarasgloss.com</span>
+                <span className="text-gray-600">zarasgloss@gmail.com</span>
+              </li>
+              <li className="flex items-center">
+                <MessageCircle size={20} className="mr-2 text-brand-pink flex-shrink-0" />
+                <a href="https://wa.me/c/2349061190264" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-brand-pink transition-colors">WhatsApp Us</a>
               </li>
             </ul>
           </div>
