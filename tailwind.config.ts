@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,16 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// ZARA'S GLOSS custom colors
+				brand: {
+					pink: '#FF4DC4', // Main brand pink from logo
+					'light-pink': '#FFDEE2', // Soft pink
+					'dark-pink': '#D63A9B', // Darker pink for accents
+					cream: '#FDE1D3', // Soft peach/cream
+					gold: '#D4AF37', // Gold accent
+					'light-gold': '#F0E68C', // Lighter gold for backgrounds
+				},
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +94,42 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(10px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
+				},
+				'fade-out': {
+					'0%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					},
+					'100%': {
+						opacity: '0',
+						transform: 'translateY(10px)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.5s ease-out',
+				'fade-out': 'fade-out 0.5s ease-out'
+			},
+			backgroundImage: {
+				'gradient-pink': 'linear-gradient(90deg, #FF4DC4 0%, #FF9BE3 100%)',
+				'gradient-gold': 'linear-gradient(90deg, #D4AF37 0%, #F0E68C 100%)',
+				'gradient-hero': 'linear-gradient(180deg, rgb(254,100,121) 0%, rgb(251,221,186) 100%)',
+			},
+			fontFamily: {
+				'playfair': ['Playfair Display', 'serif'],
+				'montserrat': ['Montserrat', 'sans-serif'],
 			}
 		}
 	},
