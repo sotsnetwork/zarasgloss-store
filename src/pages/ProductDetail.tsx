@@ -1,12 +1,13 @@
 
 import React, { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { getProductById } from '@/data/products';
+import { getProductById, products } from '@/data/products';
 import { ArrowLeft, Minus, Plus, Star, Check, ShoppingBag, Heart } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { useCart } from '@/context/CartContext';
 import { toast } from 'sonner';
+import ProductCard from '@/components/ProductCard';
 
 const ProductDetail: React.FC = () => {
   const { id } = useParams<{ id: string }>();
