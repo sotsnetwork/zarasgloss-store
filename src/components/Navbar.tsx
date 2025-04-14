@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ShoppingBag, Menu, X, Search, Heart } from 'lucide-react';
@@ -40,7 +39,7 @@ const Navbar = () => {
           <img 
             src="/lovable-uploads/75bead42-3c4e-4c63-b6a6-dbdad5216e4c.png" 
             alt="ZARA'S GLOSS" 
-            className="h-14 md:h-16"
+            className="h-40 md:h-48"
           />
         </Link>
 
