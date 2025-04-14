@@ -39,7 +39,7 @@ const Navbar = () => {
           <img 
             src="/lovable-uploads/75bead42-3c4e-4c63-b6a6-dbdad5216e4c.png" 
             alt="ZARA'S GLOSS" 
-            className="h-40 md:h-48"
+            className="h-20 md:h-24"
           />
         </Link>
 

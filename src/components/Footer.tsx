@@ -49,7 +49,7 @@ const Footer = () => {
             <img 
               src="/lovable-uploads/e04f4abb-b5a3-4bc6-9a91-eeb68dd21cd8.png" 
               alt="ZARA'S GLOSS" 
-              className="h-24 mb-6"
+              className="h-16 mb-6"
             />
             <p className="text-gray-600 mb-6">
               Handcrafted beauty products inspired by you. Elevate your beauty routine with ZARA'S GLOSS.
