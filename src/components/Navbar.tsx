@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ShoppingBag, Menu, X, Search, Heart, Instagram, MessageCircle } from 'lucide-react';
 import { useCart } from '@/context/CartContext';
@@ -11,27 +12,11 @@ import {
 
 const Navbar = () => {
   const { cartCount } = useCart();
-  const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 10) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'
-      }`}
+      className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md py-2"
     >
       <div className="container-custom flex items-center justify-between">
         {/* Logo */}

@@ -72,6 +72,7 @@ export default {
 					gold: '#D4AF37', // Gold accent
 					'light-gold': '#F0E68C', // Lighter gold for backgrounds
 				},
+				'millennial-pink': '#FFB6C1', // Adding millennial pink color
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
