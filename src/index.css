@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap');
 
 @tailwind base;
@@ -114,5 +113,9 @@
   
   .input-field {
     @apply border border-gray-300 rounded-md px-4 py-2 w-full focus:outline-none focus:ring-2 focus:ring-brand-pink focus:border-transparent;
+  }
+  
+  .hero-gradient {
+    @apply bg-gradient-to-b from-brand-pink via-brand-light-pink to-white;
   }
 }

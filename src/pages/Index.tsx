@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ChevronRight, Star } from 'lucide-react';
@@ -17,7 +16,7 @@ const Index: React.FC = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="pt-32 pb-20 md:pt-40 md:pb-32 bg-gradient-hero relative overflow-hidden">
+      <section className="pt-32 pb-20 md:pt-40 md:pb-32 hero-gradient relative overflow-hidden">
         <div className="container-custom flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 mb-10 md:mb-0 text-center md:text-left z-10">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-playfair font-bold mb-6 text-white drop-shadow-md">

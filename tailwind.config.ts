@@ -125,7 +125,7 @@ export default {
 			backgroundImage: {
 				'gradient-pink': 'linear-gradient(90deg, #FF4DC4 0%, #FF9BE3 100%)',
 				'gradient-gold': 'linear-gradient(90deg, #D4AF37 0%, #F0E68C 100%)',
-				'gradient-hero': 'linear-gradient(180deg, rgb(254,100,121) 0%, rgb(251,221,186) 100%)',
+				'gradient-hero': 'linear-gradient(180deg, #FF4DC4 0%, #FFDEE2 50%, #FFFFFF 100%)',
 			},
 			fontFamily: {
 				'playfair': ['Playfair Display', 'serif'],
