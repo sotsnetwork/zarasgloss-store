@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ShoppingBag, Menu, X, Search, Heart, Instagram, MessageCircle } from 'lucide-react';
@@ -37,11 +36,7 @@ const Navbar = () => {
       <div className="container-custom flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex items-center">
-          <img 
-            src="/lovable-uploads/75bead42-3c4e-4c63-b6a6-dbdad5216e4c.png" 
-            alt="ZARA'S GLOSS" 
-            className="h-20 md:h-24"
-          />
+          <h1 className="text-3xl font-playfair font-bold gradient-text">ZARA'S GLOSS</h1>
         </Link>
 
         {/* Desktop Navigation */}
